@@ -3,8 +3,13 @@ The relay will output logs to a predefined location and the same log file will b
 
 Loki can be configured to use s3 or local storage for data storage needs.
 
+The basic flow is as:
 
-The fluent-bit will use the bwlow regex to extract KV pairs from the logs and json parser to get json keys as well
+![CentralizedRelayer](https://github.com/bcsainju/logs-monitoring/assets/157450414/64d21a54-37fe-406c-a2ae-4bf1f951a201)
+
+
+
+The fluent-bit will use the below regex to extract KV pairs from the logs and json parser to get json keys as well
 
 Regex  ^(?<time>[a-zA-Z0-9_\/\.\-\:]*)\s+(?<log_level>[a-z]*)\t(?<message>[^\{]*)\t(?<json_log>.*)
 
