@@ -5,8 +5,7 @@ Loki can be configured to use s3 or local storage for data storage needs.
 
 The basic flow is as:
 
-![CentralizedRelayer](https://github.com/bcsainju/logs-monitoring/assets/157450414/64d21a54-37fe-406c-a2ae-4bf1f951a201)
-
+![CentralizedRelayer(1)](https://github.com/bcsainju/logs-monitoring/assets/157450414/1ce1a42e-f525-4f30-9618-f765db7f52d4)
 
 
 The fluent-bit will use the below regex to extract KV pairs from the logs and json parser to get json keys as well
